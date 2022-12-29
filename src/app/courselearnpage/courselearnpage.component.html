@@ -1,0 +1,53 @@
+<div *ngIf="data_ready==true" class="container-xl">
+  <div class="card" style="width: 15.5rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{ current_course.coursename }}</h5>
+      <br>
+      <h6 class="card-text">Introduction to {{ current_course.coursename }}</h6>
+      <ul class="card-text">
+        <li>Introduction and Overview</li>
+        <li>History of {{current_course.coursename}}</li>
+        <li>Evolution of {{current_course.coursename}}</li>
+      </ul>
+      <h6 class="card-text">Concepts in {{ current_course.coursename }}</h6>
+      <ul class="card-text">
+        <li>Concepts Overview</li>
+        <li>Theories</li>
+        <li>Advanced Concepts</li>
+      </ul>
+      <h6 class="card-text">Implementation of {{ current_course.coursename }}</h6>
+      <ul class="card-text">
+        <li>Case Studies</li>
+        <li>Implementation Details</li>
+        <li>Sample Project</li>
+      </ul>
+      <a class="card-text">Appendix</a>
+      <ul class="card-text">
+        <li>Future Advancements</li>
+        <li>Future Scope</li>
+        <li>References</li>
+      </ul>
+      <br>
+      <h6 class="card-text">Practice Test 1</h6>
+      <h6 class="card-text">Practice Test 2</h6>
+      <h6 class="card-text">Practice Test 3</h6>
+      <br>
+      <button (click)="doEndCourse()" class="btn btn-primary ml-5">End Course</button>
+    </div>
+  </div>
+  <div class="learn-container">
+    <video width="540" height="320" controls controlsList="nodownload" poster="../../assets/thumbnail.png">
+     <source src="../../assets/video.mp4" type="video/mp4">
+    </video>
+    <br>
+    <br>
+    <div class="card" style="width: 52rem;">
+      <div class="card-body">
+        <h3 class="card-title">Introduction to {{ current_course.coursename }}</h3>
+        <h5 class="card-title">Introduction and Overview</h5>
+        <p class="card-text" style="text-align: justify">()
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

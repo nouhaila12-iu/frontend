@@ -1,0 +1,14 @@
+<div class="container">
+  <b><h2>Who are we</h2></b>
+  <div class="navbar navbar-expand-lg">
+    <div *ngFor="let article of articles" class="nav-item">
+            <h3>{{article.attributes.desc}} 
+              for more information visit:
+            <a *ngIf="article.attributes.link" class="ml-3" 
+            [href]="article.attributes.link" target="_blank">{{article.attributes.link}}</a>
+            </h3>
+        </div>
+</div>
+
+
+
